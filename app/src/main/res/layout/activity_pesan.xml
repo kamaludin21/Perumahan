@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PesanActivity">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Pesan Rumah"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jika pesanan tidak dikonfirmasi selama seminggu. pesanan akan dihapus"/>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvblok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="7dp"
+            android:text="NO. BLOK : "/>
+
+        <TextView
+            android:id="@+id/getBlok"
+            android:layout_toRightOf="@id/tvblok"
+            android:textSize="20dp"
+            android:text="B02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvharga"
+            android:layout_below="@id/tvblok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="Harga : "/>
+        <TextView
+            android:id="@+id/getHarga"
+            android:layout_below="@+id/tvblok"
+            android:layout_toRightOf="@id/tvharga"
+            android:textSize="20dp"
+            android:text="Rp. 400.000.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- menampung variabel nama user -->
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/tvharga"
+            android:id="@+id/namasesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="Nama Users"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/loadingpesan"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/belirumah"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/lightGreyLine"
+        android:text="Pesan Sekarang"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

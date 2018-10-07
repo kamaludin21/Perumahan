@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Perumahan</string>
+
+    <string name="klik">Klik disini</string>
+
+    <string name="semi">:</string>
+    <string name="no_blok">NO BLOK</string>
+    <string name="harga">Harga</string>
+    <string name="status">Status</string>
+    <string name="title_activity_info">InfoActivity</string>
+</resources>
